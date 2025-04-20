@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gogof\\Desktop\\\uD504\uB85C\uC81D\uD2B8U3D\\WindowRunner\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{16A864D0-B633-DD7B-DC02-112C28216E7E}|Assembly-CSharp.csproj|c:\\users\\gogof\\desktop\\\uD504\uB85C\uC81D\uD2B8u3d\\windowrunner\\assets\\script\\obstaclemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16A864D0-B633-DD7B-DC02-112C28216E7E}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\obstaclemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16A864D0-B633-DD7B-DC02-112C28216E7E}|Assembly-CSharp.csproj|C:\\Users\\gogof\\Desktop\\\uD504\uB85C\uC81D\uD2B8U3D\\WindowRunner\\assets\\script\\globalsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16A864D0-B633-DD7B-DC02-112C28216E7E}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\globalsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16A864D0-B633-DD7B-DC02-112C28216E7E}|Assembly-CSharp.csproj|C:\\Users\\gogof\\Desktop\\\uD504\uB85C\uC81D\uD2B8U3D\\WindowRunner\\assets\\script\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16A864D0-B633-DD7B-DC02-112C28216E7E}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ObstacleManager.cs",
+              "DocumentMoniker": "C:\\Users\\gogof\\Desktop\\\uD504\uB85C\uC81D\uD2B8U3D\\WindowRunner\\Assets\\Script\\ObstacleManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\ObstacleManager.cs",
+              "ToolTip": "C:\\Users\\gogof\\Desktop\\\uD504\uB85C\uC81D\uD2B8U3D\\WindowRunner\\Assets\\Script\\ObstacleManager.cs",
+              "RelativeToolTip": "Assets\\Script\\ObstacleManager.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAwCEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T11:39:14.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GlobalSetting.cs",
+              "DocumentMoniker": "C:\\Users\\gogof\\Desktop\\\uD504\uB85C\uC81D\uD2B8U3D\\WindowRunner\\Assets\\Script\\GlobalSetting.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\GlobalSetting.cs",
+              "ToolTip": "C:\\Users\\gogof\\Desktop\\\uD504\uB85C\uC81D\uD2B8U3D\\WindowRunner\\Assets\\Script\\GlobalSetting.cs",
+              "RelativeToolTip": "Assets\\Script\\GlobalSetting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T10:38:38.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\gogof\\Desktop\\\uD504\uB85C\uC81D\uD2B8U3D\\WindowRunner\\Assets\\Script\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\gogof\\Desktop\\\uD504\uB85C\uC81D\uD2B8U3D\\WindowRunner\\Assets\\Script\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Script\\PlayerController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAYwFUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T10:22:28.46Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

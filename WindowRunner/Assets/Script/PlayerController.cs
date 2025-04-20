@@ -72,10 +72,18 @@ public class PlayerController : MonoBehaviour
         targetPosition = new Vector3(currentLane * laneOffset, transform.position.y, transform.position.z);
     }
 
+    // 충돌 판정
     private void OnCollisionEnter(Collision collision)
     {
         // ground에 닿으면 점프 가능
         if (collision.gameObject.CompareTag("Ground"))
             isJumping = false;
+
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            Debug.Log("장애물과 충돌!");
+            forwardSpeed = 0f;
+        }
+
     }
 }
