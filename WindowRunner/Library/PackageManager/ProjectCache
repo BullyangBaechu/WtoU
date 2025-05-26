@@ -1,33 +1,219 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: "C:/Users/gogof/OneDrive/Desktop/\uD504\uB85C\uC81D\uD2B8WtoU/WtoU/WindowRunner/Packages/manifest.json"
+    m_FilePath: "C:/Users/gogof/OneDrive/Desktop/\uD504\uB85C\uC81D\uD2B8 WtoU/WtoU/WindowRunner/Packages/manifest.json"
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638807561561097524
-    m_Hash: 613214847
+      ticks: 638836673192550365
+    m_Hash: 1186360795
   m_LockFileStatus:
-    m_FilePath: "C:/Users/gogof/OneDrive/Desktop/\uD504\uB85C\uC81D\uD2B8WtoU/WtoU/WindowRunner/Packages/packages-lock.json"
+    m_FilePath: "C:/Users/gogof/OneDrive/Desktop/\uD504\uB85C\uC81D\uD2B8 WtoU/WtoU/WindowRunner/Packages/packages-lock.json"
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638807561561107528
-    m_Hash: 3860546403
+      ticks: 638836673192631585
+    m_Hash: 4120551183
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
-m_ProjectPath: "C:/Users/gogof/OneDrive/Desktop/\uD504\uB85C\uC81D\uD2B8WtoU/WtoU/WindowRunner/Packages"
+m_ProjectPath: "C:/Users/gogof/OneDrive/Desktop/\uD504\uB85C\uC81D\uD2B8 WtoU/WtoU/WindowRunner/Packages"
 m_EditorVersion: 2022.3.37f1 (340ba89e4c23)
 m_ResolvedPackages:
+- packageId: com.unity.cinemachine@2.10.3
+  testable: 0
+  isDirectDependency: 1
+  version: 2.10.3
+  source: 1
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.cinemachine@2.10.3"
+  assetPath: Packages/com.unity.cinemachine
+  name: com.unity.cinemachine
+  displayName: Cinemachine
+  author:
+    name: 
+    email: 
+    url: 
+  category: cinematography
+  type: 
+  description: "Smart camera tools for passionate creators. \n\nNew starting from
+    2.7.1: Are you looking for the Cinemachine menu? It has moved to the GameObject
+    menu.\n\nIMPORTANT NOTE: If you are upgrading from the legacy Asset Store version
+    of Cinemachine, delete the Cinemachine asset from your project BEFORE installing
+    this version from the Package Manager."
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 2.1.11-beta.1
+    - 2.1.12
+    - 2.1.13
+    - 2.2.0
+    - 2.2.7
+    - 2.2.8
+    - 2.2.9
+    - 2.2.10-preview.3
+    - 2.2.10-preview.4
+    - 2.3.1
+    - 2.3.3
+    - 2.3.4
+    - 2.3.5-preview.3
+    - 2.4.0-preview.3
+    - 2.4.0-preview.4
+    - 2.4.0-preview.6
+    - 2.4.0-preview.7
+    - 2.4.0-preview.8
+    - 2.4.0-preview.9
+    - 2.4.0-preview.10
+    - 2.4.0
+    - 2.5.0
+    - 2.6.0-preview.2
+    - 2.6.0-preview.3
+    - 2.6.0-preview.5
+    - 2.6.0-preview.8
+    - 2.6.0
+    - 2.6.1-preview.6
+    - 2.6.1
+    - 2.6.2-preview.1
+    - 2.6.2
+    - 2.6.3-preview.2
+    - 2.6.3
+    - 2.6.4
+    - 2.6.5
+    - 2.6.9
+    - 2.6.10
+    - 2.6.11
+    - 2.6.14
+    - 2.6.15
+    - 2.6.17
+    - 2.7.1
+    - 2.7.2
+    - 2.7.3
+    - 2.7.4
+    - 2.7.5
+    - 2.7.8
+    - 2.7.9
+    - 2.8.0-exp.1
+    - 2.8.0-exp.2
+    - 2.8.0-pre.1
+    - 2.8.0
+    - 2.8.1
+    - 2.8.2
+    - 2.8.3
+    - 2.8.4
+    - 2.8.6
+    - 2.8.9
+    - 2.9.0-pre.1
+    - 2.9.0-pre.6
+    - 2.9.1
+    - 2.9.2
+    - 2.9.4
+    - 2.9.5
+    - 2.9.7
+    - 2.10.0
+    - 2.10.1
+    - 2.10.2
+    - 2.10.3
+    - 3.0.0-pre.3
+    - 3.0.0-pre.4
+    - 3.0.0-pre.5
+    - 3.0.0-pre.6
+    - 3.0.0-pre.7
+    - 3.0.0-pre.8
+    - 3.0.0-pre.9
+    - 3.0.1
+    - 3.1.0
+    - 3.1.1
+    - 3.1.2
+    - 3.1.3
+    compatible:
+    - 2.10.0
+    - 2.10.1
+    - 2.10.2
+    - 2.10.3
+    - 3.0.0-pre.3
+    - 3.0.0-pre.4
+    - 3.0.0-pre.5
+    - 3.0.0-pre.6
+    - 3.0.0-pre.7
+    - 3.0.0-pre.8
+    - 3.0.0-pre.9
+    - 3.0.1
+    - 3.1.0
+    - 3.1.1
+    - 3.1.2
+    - 3.1.3
+    recommended: 2.10.3
+    deprecated: []
+  dependencies:
+  - name: com.unity.test-framework
+    version: 1.1.31
+  resolvedDependencies:
+  - name: com.unity.test-framework
+    version: 1.1.33
+  - name: com.unity.ext.nunit
+    version: 1.0.6
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  keywords:
+  - camera
+  - follow
+  - rig
+  - fps
+  - cinematography
+  - aim
+  - orbit
+  - cutscene
+  - cinematic
+  - collision
+  - freelook
+  - cinemachine
+  - compose
+  - composition
+  - dolly
+  - track
+  - clearshot
+  - noise
+  - framing
+  - handheld
+  - lens
+  - impulse
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638666077203430000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.cinemachine@2.10/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/com.unity.cinemachine.git
+    revision: fa616229e5cf36a8c640e862aff6eb686dbef444
+    path: 
+  unityLifecycle:
+    version: 2.10.0
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.collab-proxy@2.7.1
   testable: 0
   isDirectDependency: 1
   version: 2.7.1
   source: 1
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.collab-proxy@2.7.1"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.collab-proxy@2.7.1"
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Version Control
@@ -121,6 +307,8 @@ m_ResolvedPackages:
     - 2.5.2
     - 2.6.0
     - 2.7.1
+    - 2.8.1
+    - 2.8.2
     compatible:
     - 2.4.3
     - 2.4.4
@@ -128,6 +316,8 @@ m_ResolvedPackages:
     - 2.5.2
     - 2.6.0
     - 2.7.1
+    - 2.8.1
+    - 2.8.2
     recommended: 2.4.4
     deprecated: []
   dependencies: []
@@ -180,7 +370,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.feature.mobile@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.feature.mobile@1.0.0"
   assetPath: Packages/com.unity.feature.mobile
   name: com.unity.feature.mobile
   displayName: Mobile
@@ -213,14 +403,14 @@ m_ResolvedPackages:
     version: 1.4.2
   - name: com.unity.adaptiveperformance
     version: 4.0.1
+  - name: com.unity.profiling.core
+    version: 1.0.2
   - name: com.unity.subsystemregistration
     version: 1.1.1
   - name: com.unity.modules.subsystems
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
-  - name: com.unity.profiling.core
-    version: 1.0.2
   - name: com.unity.mobile.notifications
     version: 2.3.2
   - name: com.unity.modules.androidjni
@@ -258,7 +448,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 3.0.28
   source: 1
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.ide.rider@3.0.28"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.ide.rider@3.0.28"
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -368,7 +558,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.22
   source: 1
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.ide.visualstudio@2.0.22"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.ide.visualstudio@2.0.22"
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -460,7 +650,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.2.5
   source: 1
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.ide.vscode@1.2.5"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.ide.vscode@1.2.5"
   assetPath: Packages/com.unity.ide.vscode
   name: com.unity.ide.vscode
   displayName: Visual Studio Code Editor
@@ -529,7 +719,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.1.33
   source: 1
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.test-framework@1.1.33"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.test-framework@1.1.33"
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -671,7 +861,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 3.0.6
   source: 1
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.textmeshpro@3.0.6"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.textmeshpro@3.0.6"
   assetPath: Packages/com.unity.textmeshpro
   name: com.unity.textmeshpro
   displayName: TextMeshPro
@@ -871,7 +1061,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.7.6
   source: 1
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.timeline@1.7.6"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.timeline@1.7.6"
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -1045,7 +1235,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.ugui@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.ugui@1.0.0"
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
   displayName: Unity UI
@@ -1118,7 +1308,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.9.4
   source: 1
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.visualscripting@1.9.4"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.visualscripting@1.9.4"
   assetPath: Packages/com.unity.visualscripting
   name: com.unity.visualscripting
   displayName: Visual Scripting
@@ -1167,11 +1357,13 @@ m_ResolvedPackages:
     - 1.9.4
     - 1.9.5
     - 1.9.6
+    - 1.9.7
     compatible:
     - 1.9.4
     - 1.9.5
     - 1.9.6
-    recommended: 1.9.6
+    - 1.9.7
+    recommended: 1.9.7
     deprecated:
     - 1.8.0-pre.1
   dependencies:
@@ -1221,7 +1413,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.ai@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.ai@1.0.0"
   assetPath: Packages/com.unity.modules.ai
   name: com.unity.modules.ai
   displayName: AI
@@ -1277,7 +1469,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.androidjni@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.androidjni@1.0.0"
   assetPath: Packages/com.unity.modules.androidjni
   name: com.unity.modules.androidjni
   displayName: Android JNI
@@ -1332,7 +1524,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.animation@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.animation@1.0.0"
   assetPath: Packages/com.unity.modules.animation
   name: com.unity.modules.animation
   displayName: Animation
@@ -1388,7 +1580,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.assetbundle@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.assetbundle@1.0.0"
   assetPath: Packages/com.unity.modules.assetbundle
   name: com.unity.modules.assetbundle
   displayName: Asset Bundle
@@ -1444,7 +1636,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.audio@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.audio@1.0.0"
   assetPath: Packages/com.unity.modules.audio
   name: com.unity.modules.audio
   displayName: Audio
@@ -1500,7 +1692,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.cloth@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.cloth@1.0.0"
   assetPath: Packages/com.unity.modules.cloth
   name: com.unity.modules.cloth
   displayName: Cloth
@@ -1560,7 +1752,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.director@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.director@1.0.0"
   assetPath: Packages/com.unity.modules.director
   name: com.unity.modules.director
   displayName: Director
@@ -1624,7 +1816,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.imageconversion@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.imageconversion@1.0.0"
   assetPath: Packages/com.unity.modules.imageconversion
   name: com.unity.modules.imageconversion
   displayName: Image Conversion
@@ -1681,7 +1873,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.imgui@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.imgui@1.0.0"
   assetPath: Packages/com.unity.modules.imgui
   name: com.unity.modules.imgui
   displayName: IMGUI
@@ -1737,7 +1929,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.jsonserialize@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.jsonserialize@1.0.0"
   assetPath: Packages/com.unity.modules.jsonserialize
   name: com.unity.modules.jsonserialize
   displayName: JSONSerialize
@@ -1793,7 +1985,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.particlesystem@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.particlesystem@1.0.0"
   assetPath: Packages/com.unity.modules.particlesystem
   name: com.unity.modules.particlesystem
   displayName: Particle System
@@ -1849,7 +2041,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.physics@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.physics@1.0.0"
   assetPath: Packages/com.unity.modules.physics
   name: com.unity.modules.physics
   displayName: Physics
@@ -1905,7 +2097,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.physics2d@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.physics2d@1.0.0"
   assetPath: Packages/com.unity.modules.physics2d
   name: com.unity.modules.physics2d
   displayName: Physics 2D
@@ -1961,7 +2153,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.screencapture@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.screencapture@1.0.0"
   assetPath: Packages/com.unity.modules.screencapture
   name: com.unity.modules.screencapture
   displayName: Screen Capture
@@ -2021,7 +2213,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.terrain@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.terrain@1.0.0"
   assetPath: Packages/com.unity.modules.terrain
   name: com.unity.modules.terrain
   displayName: Terrain
@@ -2077,7 +2269,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.terrainphysics@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.terrainphysics@1.0.0"
   assetPath: Packages/com.unity.modules.terrainphysics
   name: com.unity.modules.terrainphysics
   displayName: Terrain Physics
@@ -2141,7 +2333,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.tilemap@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.tilemap@1.0.0"
   assetPath: Packages/com.unity.modules.tilemap
   name: com.unity.modules.tilemap
   displayName: Tilemap
@@ -2200,7 +2392,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.ui@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.ui@1.0.0"
   assetPath: Packages/com.unity.modules.ui
   name: com.unity.modules.ui
   displayName: UI
@@ -2256,7 +2448,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.uielements@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.uielements@1.0.0"
   assetPath: Packages/com.unity.modules.uielements
   name: com.unity.modules.uielements
   displayName: UIElements
@@ -2324,7 +2516,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.umbra@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.umbra@1.0.0"
   assetPath: Packages/com.unity.modules.umbra
   name: com.unity.modules.umbra
   displayName: Umbra
@@ -2380,7 +2572,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.unityanalytics@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.unityanalytics@1.0.0"
   assetPath: Packages/com.unity.modules.unityanalytics
   name: com.unity.modules.unityanalytics
   displayName: Unity Analytics
@@ -2444,7 +2636,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.unitywebrequest@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.unitywebrequest@1.0.0"
   assetPath: Packages/com.unity.modules.unitywebrequest
   name: com.unity.modules.unitywebrequest
   displayName: Unity Web Request
@@ -2500,7 +2692,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.unitywebrequestassetbundle@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.unitywebrequestassetbundle@1.0.0"
   assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
   name: com.unity.modules.unitywebrequestassetbundle
   displayName: Unity Web Request Asset Bundle
@@ -2564,7 +2756,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.unitywebrequestaudio@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.unitywebrequestaudio@1.0.0"
   assetPath: Packages/com.unity.modules.unitywebrequestaudio
   name: com.unity.modules.unitywebrequestaudio
   displayName: Unity Web Request Audio
@@ -2628,7 +2820,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.unitywebrequesttexture@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.unitywebrequesttexture@1.0.0"
   assetPath: Packages/com.unity.modules.unitywebrequesttexture
   name: com.unity.modules.unitywebrequesttexture
   displayName: Unity Web Request Texture
@@ -2692,7 +2884,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.unitywebrequestwww@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.unitywebrequestwww@1.0.0"
   assetPath: Packages/com.unity.modules.unitywebrequestwww
   name: com.unity.modules.unitywebrequestwww
   displayName: Unity Web Request WWW
@@ -2772,7 +2964,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.vehicles@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.vehicles@1.0.0"
   assetPath: Packages/com.unity.modules.vehicles
   name: com.unity.modules.vehicles
   displayName: Vehicles
@@ -2832,7 +3024,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.video@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.video@1.0.0"
   assetPath: Packages/com.unity.modules.video
   name: com.unity.modules.video
   displayName: Video
@@ -2900,7 +3092,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.vr@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.vr@1.0.0"
   assetPath: Packages/com.unity.modules.vr
   name: com.unity.modules.vr
   displayName: VR
@@ -2970,7 +3162,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.wind@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.wind@1.0.0"
   assetPath: Packages/com.unity.modules.wind
   name: com.unity.modules.wind
   displayName: Wind
@@ -3026,7 +3218,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.xr@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.xr@1.0.0"
   assetPath: Packages/com.unity.modules.xr
   name: com.unity.modules.xr
   displayName: XR
@@ -3094,7 +3286,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.subsystems@1.0.0"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.modules.subsystems@1.0.0"
   assetPath: Packages/com.unity.modules.subsystems
   name: com.unity.modules.subsystems
   displayName: Subsystems
@@ -3154,7 +3346,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.6
   source: 1
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6"
   assetPath: Packages/com.unity.ext.nunit
   name: com.unity.ext.nunit
   displayName: Custom NUnit
@@ -3226,7 +3418,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.4.2
   source: 1
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.mobile.android-logcat@1.4.2"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.mobile.android-logcat@1.4.2"
   assetPath: Packages/com.unity.mobile.android-logcat
   name: com.unity.mobile.android-logcat
   displayName: Android Logcat
@@ -3235,7 +3427,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: assets
   description: "Android Logcat package provides support for:\n - Android log messages\n
     - Android application memory statistics\n - Input injection\n - Android Screen
     Capture\n - Android Screen Recorder\n - Stacktrace Utility\n\nClick the 'View
@@ -3248,10 +3440,31 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
+    - 0.1.5-preview
+    - 0.2.7-preview
+    - 1.0.0
+    - 1.0.1-preview
+    - 1.0.3-preview
+    - 1.1.0
+    - 1.1.1
+    - 1.2.0-preview
+    - 1.2.0
+    - 1.2.1
+    - 1.2.2
+    - 1.2.3
+    - 1.3.2
+    - 1.4.0
+    - 1.4.1
     - 1.4.2
+    - 1.4.3
+    - 1.4.4
+    - 1.4.5
     compatible:
     - 1.4.2
-    recommended: 1.4.2
+    - 1.4.3
+    - 1.4.4
+    - 1.4.5
+    recommended: 1.4.5
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -3269,7 +3482,7 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 638515173020000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.mobile.android-logcat@1.4/manual/index.html
   hasRepository: 1
   repository:
@@ -3291,7 +3504,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 4.0.1
   source: 1
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.adaptiveperformance@4.0.1"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.adaptiveperformance@4.0.1"
   assetPath: Packages/com.unity.adaptiveperformance
   name: com.unity.adaptiveperformance
   displayName: Adaptive Performance
@@ -3300,7 +3513,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: 'The Adaptive Performance package provides an API to get feedback
     about the thermal and power state of mobile devices, enabling applications to
     make performance-relevant adaptions at runtime.
@@ -3317,25 +3530,86 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
+    - 0.2.0-preview.1
+    - 1.0.0
+    - 1.0.1
+    - 1.1.0-preview.2
+    - 1.1.0-preview.3
+    - 1.1.0-preview.4
+    - 1.1.0-preview.5
+    - 1.1.0-preview.7
+    - 1.1.0
+    - 1.1.6
+    - 1.1.9
+    - 1.1.10
+    - 1.2.0
+    - 1.2.2
+    - 1.2.3
+    - 2.0.0-preview.1
+    - 2.0.0-preview.2
+    - 2.0.0-preview.4
+    - 2.0.0-preview.7
+    - 2.0.0-preview.8
+    - 2.0.0-preview.9
+    - 2.0.0-preview.10
+    - 2.0.0-preview.11
+    - 2.0.0
+    - 2.0.1
+    - 2.0.2
+    - 2.1.0
+    - 2.1.1
+    - 2.2.1
+    - 2.2.3
+    - 2.2.4
+    - 3.0.0-pre.2
+    - 3.0.0
+    - 3.0.2
+    - 3.0.3
+    - 4.0.0-pre.1
+    - 4.0.0
     - 4.0.1
+    - 5.0.0-pre.1
+    - 5.0.0-pre.2
+    - 5.0.0-pre.3
+    - 5.0.0-pre.4
+    - 5.0.0
+    - 5.0.1
+    - 5.0.2
+    - 5.1.0
+    - 5.1.1
+    - 5.1.2
+    - 5.1.3
+    - 5.1.4
     compatible:
     - 4.0.1
+    - 5.0.0-pre.1
+    - 5.0.0-pre.2
+    - 5.0.0-pre.3
+    - 5.0.0-pre.4
+    - 5.0.0
+    - 5.0.1
+    - 5.0.2
+    - 5.1.0
+    - 5.1.1
+    - 5.1.2
+    - 5.1.3
+    - 5.1.4
     recommended: 4.0.1
     deprecated: []
   dependencies:
-  - name: com.unity.subsystemregistration
-    version: 1.1.0
   - name: com.unity.profiling.core
     version: 1.0.2
+  - name: com.unity.subsystemregistration
+    version: 1.1.0
   resolvedDependencies:
+  - name: com.unity.profiling.core
+    version: 1.0.2
   - name: com.unity.subsystemregistration
     version: 1.1.1
   - name: com.unity.modules.subsystems
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
-  - name: com.unity.profiling.core
-    version: 1.0.2
   keywords:
   - mobile
   - adaptive
@@ -3364,7 +3638,7 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 637940147290000000
   documentationUrl: 
   hasRepository: 1
   repository:
@@ -3386,7 +3660,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.3.2
   source: 1
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.mobile.notifications@2.3.2"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.mobile.notifications@2.3.2"
   assetPath: Packages/com.unity.mobile.notifications
   name: com.unity.mobile.notifications
   displayName: Mobile Notifications
@@ -3395,7 +3669,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: assets
   description: 'Mobile Notifications package adds support for scheduling local repeatable
     or one-time notifications on iOS and Android.
 
@@ -3406,9 +3680,54 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
+    - 1.0.0-preview.4
+    - 1.0.0-preview.5
+    - 1.0.0-preview.7
+    - 1.0.0-preview.8
+    - 1.0.0-preview.9
+    - 1.0.0-preview.10
+    - 1.0.0-preview.13
+    - 1.0.0-preview.17
+    - 1.0.0-preview.21
+    - 1.0.0-preview.23
+    - 1.0.2
+    - 1.0.3-preview
+    - 1.0.3-preview.3
+    - 1.0.3-preview.4
+    - 1.0.3-preview.5
+    - 1.0.3-preview.6
+    - 1.0.3
+    - 1.0.4-preview.1
+    - 1.0.4-preview.2
+    - 1.0.4-preview.3
+    - 1.0.4-preview.4
+    - 1.0.4-preview.5
+    - 1.0.4-preview.6
+    - 1.0.4-preview.9
+    - 1.1.0-preview
+    - 1.2.0-preview
+    - 1.2.1-preview
+    - 1.3.0
+    - 1.3.2
+    - 1.4.1
+    - 1.4.2
+    - 1.4.3
+    - 1.4.4
+    - 2.0.0
+    - 2.0.1
+    - 2.0.2
+    - 2.1.0
+    - 2.1.1
+    - 2.2.0
+    - 2.2.1
+    - 2.2.2
+    - 2.3.0
+    - 2.3.1
     - 2.3.2
+    - 2.4.0
     compatible:
     - 2.3.2
+    - 2.4.0
     recommended: 2.3.2
     deprecated: []
   dependencies:
@@ -3432,7 +3751,7 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 638439365880000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.mobile.notifications@2.3/manual/index.html
   hasRepository: 1
   repository:
@@ -3449,12 +3768,76 @@ m_ResolvedPackages:
   isDeprecated: 0
   deprecationMessage: 
   fingerprint: 
+- packageId: com.unity.profiling.core@1.0.2
+  testable: 0
+  isDirectDependency: 0
+  version: 1.0.2
+  source: 1
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.profiling.core@1.0.2"
+  assetPath: Packages/com.unity.profiling.core
+  name: com.unity.profiling.core
+  displayName: Unity Profiling Core API
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: The Unity Profiling Core package provides an API for code instrumentation
+    markup, and for profiling statistic collection.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.1.0-preview.1
+    - 0.2.0-preview.1
+    - 0.2.1-preview.1
+    - 1.0.0-pre.1
+    - 1.0.0
+    - 1.0.2
+    compatible:
+    - 1.0.2
+    recommended: 1.0.2
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - profiler
+  - profiling
+  - api
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 637828752310000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/profiler.git
+    revision: 2189ba14439d76a4083f59fae87163b4bdfd49c2
+    path: 
+  unityLifecycle:
+    version: 1.0.2
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.subsystemregistration@1.1.1
   testable: 0
   isDirectDependency: 0
   version: 1.1.1
   source: 1
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.subsystemregistration@1.1.1"
+  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8 WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.subsystemregistration@1.1.1"
   assetPath: Packages/com.unity.subsystemregistration
   name: com.unity.subsystemregistration
   displayName: Subsystem Registration
@@ -3463,17 +3846,24 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: Provides internal registration mechanism for standalone subsystems. 
     It allows a standalone subsystem to inform the Subsystem Manager of its existence.
   status: 0
   errors: []
   versions:
     all:
+    - 1.0.0-preview.4
+    - 1.0.4
+    - 1.0.5
+    - 1.0.6
+    - 1.1.0
     - 1.1.1
+    - 1.1.2
     compatible:
     - 1.1.1
-    recommended: 1.1.1
+    - 1.1.2
+    recommended: 1.1.2
     deprecated: []
   dependencies:
   - name: com.unity.modules.subsystems
@@ -3497,7 +3887,7 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 637703478850000000
   documentationUrl: 
   hasRepository: 1
   repository:
@@ -3507,65 +3897,6 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 1.1.1
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-  fingerprint: 
-- packageId: com.unity.profiling.core@1.0.2
-  testable: 0
-  isDirectDependency: 0
-  version: 1.0.2
-  source: 1
-  resolvedPath: "C:\\Users\\gogof\\OneDrive\\Desktop\\\uD504\uB85C\uC81D\uD2B8WtoU\\WtoU\\WindowRunner\\Library\\PackageCache\\com.unity.profiling.core@1.0.2"
-  assetPath: Packages/com.unity.profiling.core
-  name: com.unity.profiling.core
-  displayName: Unity Profiling Core API
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: The Unity Profiling Core package provides an API for code instrumentation
-    markup, and for profiling statistic collection.
-  status: 0
-  errors: []
-  versions:
-    all:
-    - 1.0.2
-    compatible:
-    - 1.0.2
-    recommended: 1.0.2
-    deprecated: []
-  dependencies: []
-  resolvedDependencies: []
-  keywords:
-  - profiler
-  - profiling
-  - api
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 0
-  documentationUrl: 
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/profiler.git
-    revision: 2189ba14439d76a4083f59fae87163b4bdfd49c2
-    path: 
-  unityLifecycle:
-    version: 1.0.2
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
