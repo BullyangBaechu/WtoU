@@ -15,7 +15,9 @@ public class ObstacleManager : MonoBehaviour
 
     private float timer = 0f;
 
-    
+
+    public float LastSpawnZ { get; private set; } = -999f;
+
     // Obstacle Manager ╫л╠шео
     void Awake()
     {
@@ -52,6 +54,8 @@ public class ObstacleManager : MonoBehaviour
         GameObject selectedPrefab = obstaclePrefabs[prefabIndex];
 
         Instantiate(selectedPrefab, new Vector3(x, yPosition, z), Quaternion.identity);
+
+        LastSpawnZ = z;
     }
 
 }
