@@ -4,86 +4,97 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Speed Settings")]
     public float forwardSpeed = 5f;
-    public float moveSpeed = 5f;
     public float laneChangeSpeed = 10f;
-  
-    public float laneOffset = 10f; // 좌우 라인 거리
+
+    [Header("Lane Settings")]
+    public float laneOffset = 10f;
+    private int currentLane = 0;
+
+    [Header("Jump Settings")]
     public float jumpForce = 7f;
+    public float groundCheckDistance = 1.1f;
+
+    [Header("Ground Detection")]
+    public LayerMask groundLayer; // Ground 전용 감지용 레이어 마스크
 
     private Rigidbody rb;
-    private int currentLane = 0; // -1 = 왼쪽, 0 = 중앙, 1 = 오른쪽
-    private bool isJumping = false;
-
     private Vector3 targetPosition;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         targetPosition = transform.position;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // 자동 전진
-        transform.Translate(Vector3.forward * forwardSpeed * Time.deltaTime);
+        HandleInput();
+        HandleLaneMove();
+    }
 
-        // 좌우 이동(키입력)
-        if(Input.GetKeyDown(KeyCode.LeftArrow)&& currentLane > -1)
+    void FixedUpdate()
+    {
+        MoveForward();
+    }
+
+    // 입력 처리
+    void HandleInput()
+    {
+        // 좌우 이동 입력
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && currentLane > -1)
         {
-            currentLane -= 1;
-            // MoveToLane();
+            currentLane--;
+            UpdateTargetPosition();
+        }
+        else if (Input.GetKeyDown(KeyCode.RightArrow) && currentLane < 1)
+        {
+            currentLane++;
             UpdateTargetPosition();
         }
 
-        else if(Input.GetKeyDown(KeyCode.RightArrow) && currentLane < 1)
-        {
-            currentLane += 1;
-            // MoveToLane();
-            UpdateTargetPosition();
-        }
-
-        // 점프
-        if(Input.GetKeyDown(KeyCode.Space) && isJumping == false)
+        // 점프 입력 (Ground 레이어만 감지)
+        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            isJumping = true;
         }
+    }
 
+    // 전진 이동
+    void MoveForward()
+    {
+        rb.MovePosition(rb.position + Vector3.forward * forwardSpeed * Time.fixedDeltaTime);
+    }
+
+    // 라인 보간 이동
+    void HandleLaneMove()
+    {
         Vector3 newPosition = transform.position;
         newPosition.x = Mathf.Lerp(transform.position.x, targetPosition.x, Time.deltaTime * laneChangeSpeed);
         transform.position = newPosition;
     }
 
-    // 기본 순간 이동 코드
-    void MoveToLane()
-    {
-        Vector3 newPosition = transform.position;
-        newPosition.x = currentLane * laneOffset;
-        transform.position = newPosition;
-    }
-
-    // Lerp를 이용한 보간 이동
+    // 타겟 위치 갱신
     void UpdateTargetPosition()
     {
         targetPosition = new Vector3(currentLane * laneOffset, transform.position.y, transform.position.z);
     }
 
-    // 충돌 판정
+    // Ground 레이어 전용 Raycast 감지
+    bool IsGrounded()
+    {
+        Debug.DrawRay(transform.position, Vector3.down * groundCheckDistance, Color.green);
+        return Physics.Raycast(transform.position, Vector3.down, groundCheckDistance, groundLayer);
+    }
+
+    // 장애물 충돌 처리
     private void OnCollisionEnter(Collision collision)
     {
-        // ground에 닿으면 점프 가능
-        if (collision.gameObject.CompareTag("Ground"))
-            isJumping = false;
-
         if (collision.gameObject.CompareTag("Obstacle"))
         {
-            Debug.Log("장애물과 충돌!");
+            Debug.Log("장애물 충돌!");
             forwardSpeed = 0f;
         }
-
     }
 }

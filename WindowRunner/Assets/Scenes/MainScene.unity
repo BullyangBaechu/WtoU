@@ -244,10 +244,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forwardSpeed: 5
-  moveSpeed: 5
   laneChangeSpeed: 10
   laneOffset: 5
   jumpForce: 7
+  groundCheckDistance: 1.1
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!54 &594688162
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -538,7 +541,7 @@ GameObject:
   - component: {fileID: 1431967064}
   - component: {fileID: 1431967063}
   - component: {fileID: 1431967062}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground
   m_TagString: Ground
   m_Icon: {fileID: 0}
