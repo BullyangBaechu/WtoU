@@ -1,0 +1,36 @@
+# ========== Unity ==========
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Oo]cclusionCullingData/
+[Bb]ee/
+[Pp]ackages/com.unity.timeline/
+ProjectSettings/EditorBuildSettings.asset
+
+# ========== Visual Studio ==========
+.vs/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.VC.opendb
+*.vsidx
+*.obj
+
+# ========== OS / Editor ==========
+.DS_Store
+Thumbs.db
