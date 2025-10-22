@@ -53,7 +53,10 @@ public class ObstacleManager : MonoBehaviour
         int prefabIndex = Random.Range(0, obstaclePrefabs.Count);
         GameObject selectedPrefab = obstaclePrefabs[prefabIndex];
 
-        Instantiate(selectedPrefab, new Vector3(x, yPosition, z), Quaternion.identity);
+        GameObject obstacle = SimpleObjectPool.Instance.GetFromPool(selectedPrefab);
+        obstacle.transform.position = new Vector3(x, yPosition, z);
+        obstacle.transform.rotation = Quaternion.identity;
+
 
         LastSpawnZ = z;
     }

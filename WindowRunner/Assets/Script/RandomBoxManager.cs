@@ -60,7 +60,10 @@ public class RandomBoxManager : MonoBehaviour
         int prefabIndex = Random.Range(0, boxPrefabs.Count);
         GameObject selectedBox = boxPrefabs[prefabIndex];
 
-        Instantiate(selectedBox, new Vector3(x, yPosition, z), Quaternion.identity);
+        GameObject box = SimpleObjectPool.Instance.GetFromPool(selectedBox);
+        box.transform.position = new Vector3(x, yPosition, z);
+        box.transform.rotation = Quaternion.identity;
+
 
         LastSpawnZ = z;
     }
