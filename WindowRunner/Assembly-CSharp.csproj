@@ -67,6 +67,7 @@
     <Compile Include="Assets\Script\RandomBoxManager.cs" />
     <Compile Include="Assets\Script\SimpleObstaclePool.cs" />
     <Compile Include="Assets\Script\GlobalSetting.cs" />
+    <Compile Include="Assets\Script\Obstacle\BlockWall.cs" />
     <Compile Include="Assets\Script\MainCameraMove.cs" />
   </ItemGroup>
   <ItemGroup>

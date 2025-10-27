@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody rb;
     private Vector3 targetPosition;
 
+    private bool canMove = true;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -30,12 +32,18 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (!canMove)
+            return;
+
         HandleInput();
-        HandleLaneMove();
+        HandleLaneMove();   
     }
 
     void FixedUpdate()
     {
+        if (!canMove)
+            return;
+
         MoveForward();
     }
 
@@ -96,5 +104,10 @@ public class PlayerController : MonoBehaviour
             Debug.Log("장애물 충돌!");
             forwardSpeed = 0f;
         }
+    }
+
+    public void SetCanMove(bool value)
+    {
+        canMove = value;
     }
 }
