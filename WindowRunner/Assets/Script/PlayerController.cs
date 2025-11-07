@@ -22,7 +22,12 @@ public class PlayerController : MonoBehaviour
     private Rigidbody rb;
     private Vector3 targetPosition;
 
+    // 이동 방해 관련
     private bool canMove = true;
+
+    // 이속 감속 관련
+    private float originalForwardSpeed;
+    private Coroutine slowCoroutine;
 
     void Start()
     {
@@ -106,8 +111,30 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // BlockWall 관련 로직 함수
     public void SetCanMove(bool value)
     {
         canMove = value;
+    }
+
+    // SlowZone 관련 로직 함수
+    public void ApplySpeedModifier(float multiplier, float duration)
+    {
+        if (slowCoroutine != null)
+        {
+            StopCoroutine(slowCoroutine);
+            forwardSpeed = originalForwardSpeed;
+        }
+
+        originalForwardSpeed = forwardSpeed;
+        forwardSpeed *= multiplier;
+        slowCoroutine = StartCoroutine(RestoreSpeedAfterDelay(duration));
+    }
+
+    private IEnumerator RestoreSpeedAfterDelay(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        forwardSpeed = originalForwardSpeed;
+        slowCoroutine = null;
     }
 }

@@ -367,6 +367,7 @@
 "Assets/Script/GlobalSetting.cs"
 "Assets/Script/MainCameraMove.cs"
 "Assets/Script/Obstacle/BlockWall.cs"
+"Assets/Script/Obstacle/SlowZone.cs"
 "Assets/Script/ObstacleManager.cs"
 "Assets/Script/PlayerController.cs"
 "Assets/Script/RandomBoxManager.cs"
