@@ -2,52 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SlowZone : MonoBehaviour
+public class SlowZone : BaseObstacle
 {
-    [Header("Slow Settings")]
-    [Range(0.1f, 1f)]
-    public float slowMultiplier = 0.5f; // 감속 비율
-    public float slowDuration = 2f;     // 지속 시간
-
-    private bool isActive = true;
-
-
-    // Start is called before the first frame update
-    void Start()
+    public float slowMultiplier = 0.5f;
+    private void Awake()
     {
-        
+        GetComponent<Collider>().isTrigger = true;
+    }
+    protected override void OnPlayerEnter(PlayerController player)
+    {
+        // 장판에 진입한 순간부터 감속 시작
+        player.EnterSlowZone(slowMultiplier);
     }
 
-    // Update is called once per frame
-    void Update()
+    protected override void OnPlayerStay(PlayerController player)
     {
-        
+        // 장판 위에 있는 동안 감속 유지
+        player.MaintainSlowZone();
     }
 
-    private void OnEnable()
+    protected override void OnPlayerExit(PlayerController player)
     {
-        isActive = true;
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (!isActive) return;
-
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            PlayerController player = collision.gameObject.GetComponent<PlayerController>();
-            if (player != null)
-                player.ApplySpeedModifier(slowMultiplier, slowDuration);
-
-            // 즉시 풀로 복귀시킬 수도 있음 (일회성 장애물이라면)
-            StartCoroutine(DeactivateAfterDelay());
-        }
-    }
-
-    private IEnumerator DeactivateAfterDelay()
-    {
-        yield return new WaitForSeconds(0.1f);
-        isActive = false;
-        gameObject.SetActive(false);
+        // 장판을 벗어난 순간 → 원래 속도로 복구
+        player.ExitSlowZone();
+        Deactivate();
     }
 }

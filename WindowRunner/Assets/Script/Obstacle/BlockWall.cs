@@ -3,56 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[RequireComponent(typeof(Collider))]
-public class BlockWall : MonoBehaviour
+
+public class BlockWall : BaseObstacle
 {
-    // Start is called before the first frame update
-    void Start()
+    protected override void OnPlayerEnter(PlayerController player)
     {
-        
+        // 벽과 처음 충돌 -> 이동 불가
+        //player.SetCanMove(false);
+        //player.forwardSpeed = 0f;
     }
 
-    // Update is called once per frame
-    void Update()
+    protected override void OnPlayerStay(PlayerController player)
     {
-        
+        // 부딪혀 있는 동안 계속 이동 금지
+        //player.SetCanMove(false);
+        //player.forwardSpeed = 0f;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    protected override void OnPlayerExit(PlayerController player)
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            // 플레이어 이동 즉시 정지
-            PlayerController player = collision.gameObject.GetComponent<PlayerController>();
-            if (player != null)
-                player.SetCanMove(false);
-        }
+        // 벽에서 떨어지는 순간 → 이동 가능
+        //player.SetCanMove(true);
+
+        // 원래 속도로 복구 (SlowZone 상태도 고려)
+        if (player.IsInSlowZone())
+            player.forwardSpeed = player.GetBaseSpeed() * player.GetSlowMultiplier();
+        else
+            player.forwardSpeed = player.GetBaseSpeed();
     }
-
-    private void OnCollisionStay(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            // 부딪혀있는 동안 계속 이동 금지 유지
-            PlayerController player = collision.gameObject.GetComponent<PlayerController>();
-            if (player != null)
-                player.SetCanMove(false);
-        }
-    }
-
-    private void OnCollisionExit(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            // 벽에서 벗어나면 이동 다시 가능
-            PlayerController player = collision.gameObject.GetComponent<PlayerController>();
-            if (player != null)
-                player.SetCanMove(true);
-
-            // 풀로 반환
-            SimpleObjectPool.Instance.ReturnToPool(this.gameObject);
-        }
-    }
-
-
 }

@@ -26,13 +26,20 @@ public class PlayerController : MonoBehaviour
     private bool canMove = true;
 
     // 이속 감속 관련
-    private float originalForwardSpeed;
-    private Coroutine slowCoroutine;
+    private float baseForwardSpeed;
+    private bool isInSlowZone = false;
+    private float slowMultiplier = 0.5f;
+
+    public bool IsInSlowZone() => isInSlowZone;
+    public float GetBaseSpeed() => baseForwardSpeed;
+    public float GetSlowMultiplier() => slowMultiplier;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         targetPosition = transform.position;
+
+        baseForwardSpeed = forwardSpeed;
     }
 
     void Update()
@@ -74,18 +81,19 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // 전진 이동
+    // 전진 
     void MoveForward()
     {
         rb.MovePosition(rb.position + Vector3.forward * forwardSpeed * Time.fixedDeltaTime);
     }
 
-    // 라인 보간 이동
+    // 라인 이동
     void HandleLaneMove()
     {
-        Vector3 newPosition = transform.position;
-        newPosition.x = Mathf.Lerp(transform.position.x, targetPosition.x, Time.deltaTime * laneChangeSpeed);
-        transform.position = newPosition;
+        Vector3 target = new Vector3(currentLane * laneOffset, transform.position.y, transform.position.z);
+        Vector3 newPos = Vector3.Lerp(transform.position, target, Time.deltaTime * laneChangeSpeed);
+
+        rb.MovePosition(new Vector3(newPos.x, rb.position.y, rb.position.z));
     }
 
     // 타겟 위치 갱신
@@ -104,11 +112,13 @@ public class PlayerController : MonoBehaviour
     // 장애물 충돌 처리
     private void OnCollisionEnter(Collision collision)
     {
+        /*
         if (collision.gameObject.CompareTag("Obstacle"))
         {
             Debug.Log("장애물 충돌!");
             forwardSpeed = 0f;
         }
+        */
     }
 
     // BlockWall 관련 로직 함수
@@ -118,23 +128,22 @@ public class PlayerController : MonoBehaviour
     }
 
     // SlowZone 관련 로직 함수
-    public void ApplySpeedModifier(float multiplier, float duration)
+    public void EnterSlowZone(float multiplier)
     {
-        if (slowCoroutine != null)
-        {
-            StopCoroutine(slowCoroutine);
-            forwardSpeed = originalForwardSpeed;
-        }
-
-        originalForwardSpeed = forwardSpeed;
-        forwardSpeed *= multiplier;
-        slowCoroutine = StartCoroutine(RestoreSpeedAfterDelay(duration));
+        isInSlowZone = true;
+        slowMultiplier = multiplier;
+        forwardSpeed = baseForwardSpeed * slowMultiplier;
     }
 
-    private IEnumerator RestoreSpeedAfterDelay(float duration)
+    public void MaintainSlowZone()
     {
-        yield return new WaitForSeconds(duration);
-        forwardSpeed = originalForwardSpeed;
-        slowCoroutine = null;
+        if (isInSlowZone)
+            forwardSpeed = baseForwardSpeed * slowMultiplier;
+    }
+
+    public void ExitSlowZone()
+    {
+        isInSlowZone = false;
+        forwardSpeed = baseForwardSpeed;
     }
 }
