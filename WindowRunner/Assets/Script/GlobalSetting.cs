@@ -4,5 +4,5 @@ using UnityEngine;
 
 public static class GlobalSetting
 {
-    public static float laneOffset = 3f;
+    public static float laneOffset = 10f;
 }

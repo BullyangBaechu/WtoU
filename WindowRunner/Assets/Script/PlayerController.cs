@@ -2,22 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class PlayerController : MonoBehaviour
 {
-    [Header("Speed Settings")]
-    public float forwardSpeed = 5f;
-    public float laneChangeSpeed = 10f;
-
+    
     [Header("Lane Settings")]
     public float laneOffset = 10f;
     private int currentLane = 0;
 
     [Header("Jump Settings")]
-    public float jumpForce = 7f;
+    //public float jumpForce = 7f;
     public float groundCheckDistance = 1.1f;
 
     [Header("Ground Detection")]
     public LayerMask groundLayer; // Ground 전용 감지용 레이어 마스크
+
+    // 캐릭터 스탯
+    public PlayerStats stats;
 
     private Rigidbody rb;
     private Vector3 targetPosition;
@@ -25,6 +27,9 @@ public class PlayerController : MonoBehaviour
     // 이동 방해 관련
     private bool canMove = true;
 
+    // 실제 이동 속도 관리
+    private float currentForwardSpeed;
+   
     // 이속 감속 관련
     private float baseForwardSpeed;
     private bool isInSlowZone = false;
@@ -39,7 +44,8 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         targetPosition = transform.position;
 
-        baseForwardSpeed = forwardSpeed;
+        baseForwardSpeed = stats.forwardSpeed;
+        currentForwardSpeed = stats.forwardSpeed;
     }
 
     void Update()
@@ -77,21 +83,21 @@ public class PlayerController : MonoBehaviour
         // 점프 입력 (Ground 레이어만 감지)
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            rb.AddForce(Vector3.up * stats.jumpForce, ForceMode.Impulse);
         }
     }
 
     // 전진 
     void MoveForward()
     {
-        rb.MovePosition(rb.position + Vector3.forward * forwardSpeed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + Vector3.forward * currentForwardSpeed * Time.fixedDeltaTime);
     }
 
     // 라인 이동
     void HandleLaneMove()
     {
         Vector3 target = new Vector3(currentLane * laneOffset, transform.position.y, transform.position.z);
-        Vector3 newPos = Vector3.Lerp(transform.position, target, Time.deltaTime * laneChangeSpeed);
+        Vector3 newPos = Vector3.Lerp(transform.position, target, Time.deltaTime * stats.laneChangeSpeed);
 
         rb.MovePosition(new Vector3(newPos.x, rb.position.y, rb.position.z));
     }
@@ -132,18 +138,24 @@ public class PlayerController : MonoBehaviour
     {
         isInSlowZone = true;
         slowMultiplier = multiplier;
-        forwardSpeed = baseForwardSpeed * slowMultiplier;
+        currentForwardSpeed = baseForwardSpeed * slowMultiplier;
     }
 
     public void MaintainSlowZone()
     {
         if (isInSlowZone)
-            forwardSpeed = baseForwardSpeed * slowMultiplier;
+            currentForwardSpeed = baseForwardSpeed * slowMultiplier;
     }
 
     public void ExitSlowZone()
     {
         isInSlowZone = false;
-        forwardSpeed = baseForwardSpeed;
+        currentForwardSpeed = baseForwardSpeed;
     }
+
+    public void SetCurrentSpeed(float value)
+    {
+        currentForwardSpeed = value;
+    }
+
 }

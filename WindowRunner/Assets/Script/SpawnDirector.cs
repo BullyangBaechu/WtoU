@@ -11,9 +11,9 @@ public class SpawnDirector : MonoBehaviour
 
     [Header("Difficulty Settings")]
     public Transform playerTransform;
-    public float difficultyRampSpeed = 0.001f; // 플레이어 이동 거리에 따라 속도 증가
-    public float minObstacleInterval = 0.8f;
-    public float maxObstacleInterval = 2.0f;
+    public float minSpawnDistance = 12f;
+    public float maxSpawnDistance = 30f;
+    public float difficultyRampSpeed = 0.02f;
 
 
     // Start is called before the first frame update
@@ -28,22 +28,18 @@ public class SpawnDirector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (obstacleManager == null || randomBoxManager == null || playerTransform == null)
+        if (obstacleManager == null || randomBoxManager == null)
             return;
 
-        // 두 스폰 간 거리 차이 검사 (겹치면 랜덤박스 스폰 약간 지연)
+        // 난이도 증가 → 스폰 간격 점점 짧게
+        float distance = playerTransform.position.z;
+        obstacleManager.spawnZDistance = Mathf.Clamp(maxSpawnDistance - distance * difficultyRampSpeed, minSpawnDistance, maxSpawnDistance);
+
+        // RandomBox와의 충돌 방지
         float gap = Mathf.Abs(obstacleManager.LastSpawnZ - randomBoxManager.LastSpawnZ);
         if (gap < 10f)
         {
             randomBoxManager.DelayNextSpawn(1.0f);
         }
-
-        // 플레이 거리 기반 난이도 조정 (장애물 스폰 주기 점점 빨라짐)
-        float distance = playerTransform.position.z;
-        obstacleManager.spawnInterval = Mathf.Clamp(
-            maxObstacleInterval - (distance * difficultyRampSpeed),
-            minObstacleInterval,
-            maxObstacleInterval
-        );
     }
 }

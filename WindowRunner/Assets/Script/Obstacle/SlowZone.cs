@@ -25,6 +25,5 @@ public class SlowZone : BaseObstacle
     {
         // 장판을 벗어난 순간 → 원래 속도로 복구
         player.ExitSlowZone();
-        Deactivate();
     }
 }

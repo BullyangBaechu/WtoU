@@ -8,6 +8,10 @@ TagManager:
   - Obstacle
   - BlockWall
   - SlowZone
+  - FxTemporaire
+  - Obstcales
+  - Wall
+  - Slider
   layers:
   - Default
   - TransparentFX

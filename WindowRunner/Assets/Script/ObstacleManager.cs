@@ -18,10 +18,15 @@ public class ObstacleManager : MonoBehaviour
     [Header("Obstacle Settings")]
     //public List<GameObject> obstaclePrefabs;
     public List<ObstacleSpawnEntry> obstacles;
-    public Transform playerTransform;
-    public float spawnInterval = 2f;
+    //public float spawnInterval = 2f;
     public float spawnZDistance = 30f;
     public float yPosition = 1f;
+
+    [Header("World Reference")]
+    public Transform playerTransform;    // 플레이어는 위치 기준만 필요
+    public PlayerController playerController;
+    //public float worldProgress = 0f;     // 게임 진행량 (플레이어가 안 움직여도 증가)
+
 
     private float timer = 0f;
 
@@ -38,18 +43,43 @@ public class ObstacleManager : MonoBehaviour
 
     }
 
+    void Start()
+    {
+        // 시작 스폰 지점 : 플레이어 기준 앞쪽
+        LastSpawnZ = playerTransform.position.z;
+    }
+
+
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
+        float playerZ = playerTransform.position.z;
 
-        if (timer >= spawnInterval)
+        if (playerZ - LastSpawnZ >= spawnZDistance)
         {
-            SpawnRandomObstacle();
-            timer = 0f;
+            SpawnRandomObstacle(playerZ);
+            LastSpawnZ = playerZ;
         }
+
         CleanupObstacles();
     }
+
+    // 실제 이동 거리 대신 "게임 진행량"을 deltaTime 기반으로 증가
+    /*void UpdateWorldProgress()
+    {
+        float speed;
+
+        if (playerController != null)
+        {
+            speed = playerController.stats.forwardSpeed;
+        }
+        else
+        {
+            speed = 10f;
+        }
+
+        worldProgress += speed * Time.deltaTime;
+    }*/
 
     // 가중치 기반 랜덤 선택 
     GameObject GetWeightedRandomObstacle()
@@ -71,22 +101,21 @@ public class ObstacleManager : MonoBehaviour
         return obstacles[0].prefab;
     }
 
-    void SpawnRandomObstacle()
+    void SpawnRandomObstacle(float playerZ)
     {
         if (obstacles.Count == 0 || playerTransform == null)
             return;
 
         int lane = Random.Range(-1, 2);
         float x = lane * GlobalSetting.laneOffset;
-        float z = playerTransform.position.z + spawnZDistance;
+        float z = playerZ + spawnZDistance;
+
 
         GameObject selectedPrefab = GetWeightedRandomObstacle();
         GameObject obstacle = SimpleObjectPool.Instance.GetFromPool(selectedPrefab);
 
         obstacle.transform.position = new Vector3(x, yPosition, z);
         obstacle.transform.rotation = Quaternion.identity;
-
-        LastSpawnZ = z;
     }
 
     // 뒤로 지나간 장애물 회수
